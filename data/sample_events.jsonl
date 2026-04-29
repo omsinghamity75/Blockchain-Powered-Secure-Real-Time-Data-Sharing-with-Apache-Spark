@@ -1,0 +1,3 @@
+{"source":"sensor-a","owner":"team-alpha","temperature":28,"humidity":61}
+{"source":"sensor-b","owner":"team-beta","temperature":31,"humidity":58}
+{"source":"sensor-c","owner":"team-gamma","temperature":26,"humidity":65}
