@@ -107,20 +107,4 @@ The Spark script prints a table with:
 - alert status
 - processed timestamp
 
-## Why The Earlier Spark Run Failed
 
-Your previous run was failing for two separate Windows-specific reasons:
-
-1. `winutils.exe` / `HADOOP_HOME` warnings from Hadoop on Windows
-2. a Python worker crash caused by the Windows Store Python path used by PySpark
-
-The current Spark script avoids Python-worker-created input data and stays on the JVM side for dataset creation, which makes it much more reliable on your setup.
-
-## Suggested Final-Year Project Extensions
-
-- Add login and role-based access control
-- Store records in PostgreSQL or MongoDB
-- Use Kafka between producers and Spark
-- Add encryption or digital signatures per record
-- Build a frontend dashboard for records and analytics
-- Containerize the full system with Docker
